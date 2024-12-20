@@ -27,4 +27,18 @@ document.getElementById('regForm').addEventListener('submit', function(event) {
     document.getElementById('registration').style.display = 'none';
     document.getElementById('result').style.display = 'block';
     document.getElementById('resultContent').innerHTML = `
-        <p>Terima kasih,
+        <p>Terima kasih, ${name}! Anda telah mendaftar untuk lomba ${category.toUpperCase()}!</p>
+        <p>Email: ${email}</p>
+        <p>Nomor Telepon: ${phone}</p>
+    `;
+
+    // Reset formulir setelah pendaftaran
+    document.getElementById('regForm').reset();
+});
+
+// Tombol kembali ke halaman utama
+document.getElementById('backButton').addEventListener('click', function() {
+    document.getElementById('info').style.display = 'block';
+    document.getElementById('registration').style.display = 'block';
+    document.getElementById('result').style.display = 'none';
+});
