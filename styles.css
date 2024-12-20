@@ -20,6 +20,10 @@ h2 {
     color: #333;
 }
 
+section {
+    margin-bottom: 20px;
+}
+
 form {
     background: #fff;
     padding: 20px;
@@ -51,4 +55,14 @@ button {
 
 button:hover {
     background: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #007BFF;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
