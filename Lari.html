@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Lomba Lari</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pendaftaran Lomba Lari 2023</h1>
+    </header>
+    <main>
+        <section id="info">
+            <h2>Informasi Lomba</h2>
+            <p>Nama Lomba: Lari Sehat 2023</p>
+            <p>Tanggal: 15 Desember 2023</p>
+            <p>Lokasi: Lapangan Merdeka, Jakarta</p>
+            <p>Jenis Lomba: 5K dan 10K</p>
+            <p>Biaya Pendaftaran: Rp 100.000</p>
+        </section>
+        
+        <section id="registration">
+            <h2>Formulir Pendaftaran</h2>
+            <form id="regForm">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Nomor Telepon:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="category">Kategori:</label>
+                <select id="category" name="category">
+                    <option value="5k">5K</option>
+                    <option value="10k">10K</option>
+                </select>
+                
+                <button type="submit">Daftar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Kontak: info@lombalari2023.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
